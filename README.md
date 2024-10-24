@@ -45,3 +45,33 @@ Before running this project, ensure you have the following installed:
    ```bash
    git clone https://github.com/your-username/vehicle-detection.git
    cd vehicle-detection-system
+2. Install the required dependencies:
+
+    ```bash
+   pip install -r requirements.txt
+
+3. Download the pre-trained YOLOv3 weights and configuration files:
+
+YOLOv3 Weights
+YOLOv3 Config
+4. Place the yolov3.weights and yolov3.cfg files into the model/ directory.
+
+5. Set up the SQL database and configure it in the code by providing the connection string in the config.py file.
+
+Usage
+a) Running the Vehicle Detection System:
+
+b) To start vehicle detection, run the following command:
+
+    ```bash
+       Copy code
+      python detect.py --input videos/traffic.mp4 --output output/results.avi --yolo model/
+
+This will detect vehicles in the provided input video (traffic.mp4) and save the processed output to results.avi.
+
+Parking Management:
+
+The system can monitor parking areas by running the following command:
+
+    ```bash
+     python parking_management.py --input videos/parking_lot.mp4 --output output/parking_results.avi --yolo model/
