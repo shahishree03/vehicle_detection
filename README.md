@@ -45,10 +45,7 @@ Before running this project, ensure you have the following installed:
    ```bash
    git clone https://github.com/your-username/vehicle-detection.git
    cd vehicle-detection-system
-2. Install the required dependencies:
-
-    ```bash
-   pip install -r requirements.txt
+2. Install the required libraries above
 
 3. Download the pre-trained YOLOv3 weights and configuration files:
 
